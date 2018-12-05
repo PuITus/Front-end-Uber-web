@@ -125,7 +125,7 @@ export default {
           var auth;
          if(this.password =="1") alert("ok");
            $.ajax({
-                    url : "http://localhost:3000/api/users/login",
+                    url : "https://agile-tundra-88638.herokuapp.com/api/users/login",
                     type : "post",
                     dataType:"json",
                     data : {
@@ -191,7 +191,7 @@ export default {
       {
         var vm = this;
            $.ajax({
-                    url : "http://localhost:3000/api/users/checkToken",
+                    url : "https://agile-tundra-88638.herokuapp.com/api/users/checkToken",
                     type : "post",
                     dataType:"json",
                     data : {
@@ -205,7 +205,7 @@ export default {
                         if(result.error.name=="TokenExpiredError")
                         {
                                 $.ajax({
-                              url : "http://localhost:3000/api/users/refreshToken",
+                              url : "https://agile-tundra-88638.herokuapp.com/api/users/refreshToken",
                               type : "post",
                               dataType:"json",
                               data : {
